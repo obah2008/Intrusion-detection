@@ -20,3 +20,10 @@ sudo ./splunk start
 ```
 - Accept the terms and agreements
 <img width="1292" height="705" alt="image" src="https://github.com/user-attachments/assets/2fce4bcb-b66f-4456-a2cb-f3ad04b7b831" />
+
+- Create a Username and password and complete the installation process
+
+<img width="1330" height="667" alt="image" src="https://github.com/user-attachments/assets/23e32e9c-b9bb-4976-91a6-6118b7960c3c" />
+
+- The dashboard can now be accessed at http://<your server's address>:8000
+<img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/b333496f-9c8d-4f0c-aa5f-ee838d8899ec" />
