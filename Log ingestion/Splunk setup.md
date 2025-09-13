@@ -30,3 +30,18 @@ sudo ./splunk start
 
 ## Configuring Splunk
 Since this is a single-VM setup, there’s no need to install the Universal Forwarder. Instead, we will configure Splunk Enterprise to directly collect logs from the Suricata **eve.json** file.
+
+- Create a new index
+An index is essentially a log bucket, where splunk stores log data
+```bash
+sudo /opt/splunk/bin/splunk add index suricata
+```
+- Add the **eve.json** file to the Suricata index
+```bash
+sudo /opt/splunk/bin/splunk add monitor /var/log/suricata/eve.json -index suricata -sourcetype suricata:json
+```
+
+- restart Splunk 
+```bash
+sudo /opt/splunk/bin/splunk restart
+```
