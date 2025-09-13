@@ -15,7 +15,8 @@ sudo dpkg -i splunk-9.4.2-e9664af3d956-linux-amd64.deb
 - Navigate to Splunk's directory and start Splunk
 ```bash
 cd /opt/splunk/bin
-./splunk start
+
+sudo ./splunk start
 ```
 - Accept the terms and agreements
 <img width="1292" height="705" alt="image" src="https://github.com/user-attachments/assets/2fce4bcb-b66f-4456-a2cb-f3ad04b7b831" />
