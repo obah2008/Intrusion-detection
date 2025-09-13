@@ -40,8 +40,8 @@ sudo /opt/splunk/bin/splunk add index suricata
 ```bash
 sudo /opt/splunk/bin/splunk add monitor /var/log/suricata/eve.json -index suricata -sourcetype suricata:json
 ```
-
 - restart Splunk 
 ```bash
 sudo /opt/splunk/bin/splunk restart
 ```
+<img width="1324" height="678" alt="image" src="https://github.com/user-attachments/assets/5e952535-9ad4-45e5-9b68-9fecc20430bc" />
