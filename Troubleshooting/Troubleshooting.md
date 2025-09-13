@@ -19,4 +19,5 @@ Ran into this error, while trying to run a Splunk search
 Search not executed: The minimum free disk space (5000MB) reached for /opt/splunk/var/run/splunk/dispatch. user=obah., concurrency_category="historical", concurrency_context="user_instance-wide", current_concurrency=0, concurrency_limit=5000
 ```
 
-## Fix: Turns out I had almost run out of space on the host VM. Allocate more space to the virtual machine
+## Fix: Turns out I had almost run out of space on the host VM. 
+Allocate more space to the virtual machine
