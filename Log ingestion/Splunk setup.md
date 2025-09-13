@@ -27,3 +27,6 @@ sudo ./splunk start
 
 - The dashboard can now be accessed at http://<your server's address>:8000
 <img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/b333496f-9c8d-4f0c-aa5f-ee838d8899ec" />
+
+## Configuring Splunk
+Since this is a single-VM setup, there’s no need to install the Universal Forwarder. Instead, we will configure Splunk Enterprise to directly collect logs from the Suricata **eve.json** file.
