@@ -7,9 +7,9 @@ A lab project that uses Suricata to detect simulated attacks, ships alerts to Sp
 - Attack Simulation (Atomic Red Team)
 - Response Automation
 
-## 0bjectives
+## Objectives
 - Configure Suricata to inspect and log endpoint network traffic.
-- Forward Suricata’s EVE JSON logs to Splunk for analysis and visualization.
+- Forward Suricata’s EVE.JSON logs to Splunk for analysis and visualization.
 - Write and tune custom Suricata rules to detect Atomic Red Team attack techniques.
 - Validate detections against the MITRE ATT&CK framework.
 - Build Splunk dashboards and alerts for better visibility.
