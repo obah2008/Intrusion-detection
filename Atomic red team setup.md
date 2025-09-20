@@ -21,4 +21,12 @@ wget -q https://packages.microsoft.com/config/debian/$VERSION_ID/packages-micros
 ```bash
 sudo dpkg -i packages-microsoft-prod.deb
 ```
--
+-  Delete the GPG keys
+```bash
+rm packages-microsoft-prod.deb
+```
+
+- Install PowerShell
+```bash
+sudo apt-get install -y powershell
+```
