@@ -31,6 +31,15 @@ rm packages-microsoft-prod.deb
 sudo apt-get install -y powershell
 ```
 <img width="1357" height="668" alt="image" src="https://github.com/user-attachments/assets/ea12f842-d8f9-4e6b-8623-17a91f4a9d0d" />
-
 - Start PowerShell
 pwsh
+
+
+### installing ART
+Now that we have powershell installed, we can move on to installing Red canary's Atomic red team, see [here](https://github.com/redcanaryco/invoke-atomicredteam/wiki/Installing-Invoke-AtomicRedTeam) for official documentation
+
+- Install ART and the Atomics folder
+```bash
+IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1' -UseBasicParsing);
+Install-AtomicRedTeam -getAtomics
+```
