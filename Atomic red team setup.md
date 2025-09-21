@@ -30,3 +30,7 @@ rm packages-microsoft-prod.deb
 ```bash
 sudo apt-get install -y powershell
 ```
+<img width="1357" height="668" alt="image" src="https://github.com/user-attachments/assets/ea12f842-d8f9-4e6b-8623-17a91f4a9d0d" />
+
+- Start PowerShell
+pwsh
