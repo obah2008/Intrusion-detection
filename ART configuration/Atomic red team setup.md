@@ -1,4 +1,4 @@
-<img width="1220" height="693" alt="image" src="https://github.com/user-attachments/assets/87308bae-c679-4ca2-8f53-65468e9e221e" /># Atomic Red Team
+# Atomic Red Team
 ## What is Atomic Red Team
 ART is a library of **tests** that simulate adversary behaviours and techniques based on MITRE framework. These tests are called **Atomics**, a pretty explosive name in my opnion.
 
