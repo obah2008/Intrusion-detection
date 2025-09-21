@@ -20,3 +20,13 @@ Search not executed: The minimum free disk space (5000MB) reached for /opt/splun
 
 ### Fix: It turns out I had almost run out of space on the host VM.
 Allocate more space to the virtual machine.
+
+
+## Issue 3
+Ran into the following error while trying to install atomic red team
+```
+Invoke-WebRequest: Unable to read data from the transport connection: Connection reset by peer.
+Install-AtomicRedTeam: The term 'Install-AtomicRedTeam' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+```
