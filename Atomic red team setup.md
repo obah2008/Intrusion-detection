@@ -1,4 +1,4 @@
-# Atomic Red Team
+<img width="1220" height="693" alt="image" src="https://github.com/user-attachments/assets/87308bae-c679-4ca2-8f53-65468e9e221e" /># Atomic Red Team
 ## What is Atomic Red Team
 ART is a library of **tests** that simulate adversary behaviours and techniques based on MITRE framework. These tests are called **Atomics**, a pretty explosive name in my opnion.
 
@@ -39,7 +39,14 @@ pwsh
 Now that we have powershell installed, we can move on to installing Red canary's Atomic red team, see [here](https://github.com/redcanaryco/invoke-atomicredteam/wiki/Installing-Invoke-AtomicRedTeam) for official documentation
 
 - Install ART and the Atomics folder
-```bash
+```pwsh
 IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1' -UseBasicParsing);
 Install-AtomicRedTeam -getAtomics -Force
+```
+<img width="1220" height="693" alt="image" src="https://github.com/user-attachments/assets/f78e84eb-405e-45ce-ad8d-187d2d4ca338" />
+
+- Run tests
+Now that we have both the invoke atomic engine and the Atomics folder, we can check if they work properly by running an atomic test, for this I have picked Atomic T1016
+```pwsh
+invoke-AtomicTest T1016
 ```
