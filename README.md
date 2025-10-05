@@ -5,7 +5,9 @@ A lab project that uses Suricata to detect simulated attacks, ships alerts to Sp
 - Suricata Setup
 - Splunk Setup/log forwarding
 - Attack Simulation (Atomic Red Team)
+- automated alerting via Python
 - Response Automation
+
 
 
 ## Objectives
