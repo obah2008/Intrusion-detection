@@ -5,7 +5,7 @@ A suricata detection rule in it's simplest form is this
 
 action protocol src_ip src_port -> dest_ip dest_port (options)
 
-"Action" defines what suricata will do with the packet, the available options for this section are
+the action field defines what suricata will do with the packet, the available options for this section are
 - Alert
 - pass
 - drop
@@ -13,6 +13,17 @@ action protocol src_ip src_port -> dest_ip dest_port (options)
 - rejectsrc
 - rejectdst
 - rejectboth
+
+the protocol field tells suricata what type of traffic this rule applies to, the field can contain the following values
+
+1. Network/Transport layer protocols
+    - IP
+    - UDP
+    - TCP
+    - ICMP
+    
+2. Application layer protocols
+
 
 ## Writing SPL queries
 Splunk query Language allows you to sift through logs that have been ingested to suricata, the first step to writing SPL queries is defining the index--think of it like a storage container where logs collected by splunk are stored
