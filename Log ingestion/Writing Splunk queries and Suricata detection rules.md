@@ -29,7 +29,28 @@ the protocol field tells suricata what type of traffic this rule applies to, the
     - RDP
     - SSH
   
-the src_ip field determines what source IP address suricata looks for, This field can be a single address or a range of addresses or we can specify traffic from our internal network{$HOME_NET} or external network{$EXTERNAL_NET}
+the src_ip field determines what source IP address suricata looks for, This field can be a single address or a range of addresses or we can specify traffic from our internal network{$HOME_NET} or external network{$EXTERNAL_NET}, it can also have the value any, meaning all IP addresses that match the rules other parameters 
+
+src_port field specifies what port suricata monitors
+
+->/<-> specify the packet flow
+
+dest_ip similar to src_ip but specifies the destination IP address
+
+dest_port Specifies the destination Port to be monitored
+
+
+options, they are contained in the parenthesis after the dest_port field, consisting of keyword value pairs separated by a paremthesis. It defines detection logic, metadata, and behavioral actions applied when the rule header matches network traffic. 
+
+Some of the key pairs suricata uses are: 
+
+- Option	Description
+- content	Matches a specific string or byte pattern in the payload.
+- nocase	Makes content match case-insensitive.
+- offset	Sets where in the payload to begin searching.
+- depth	    Limits how far into the payload to search.
+
+
 
 
 
