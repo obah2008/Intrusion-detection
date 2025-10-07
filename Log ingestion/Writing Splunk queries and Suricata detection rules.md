@@ -44,11 +44,11 @@ options, they are contained in the parenthesis after the dest_port field, consis
 
 Some of the key pairs suricata uses are: 
 
-- Option	Description
-- content	Matches a specific string or byte pattern in the payload.
-- nocase	Makes content match case-insensitive.
-- offset	Sets where in the payload to begin searching.
-- depth	    Limits how far into the payload to search.
+- Option    [Description]
+- content	[Matches a specific string or byte pattern in the payload]
+- nocase	[Makes content match case-insensitive]
+- offset	[Sets where in the payload to begin searching]
+- depth	    [Limits how far into the payload to search]
 
 
 
