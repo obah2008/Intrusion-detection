@@ -23,6 +23,14 @@ the protocol field tells suricata what type of traffic this rule applies to, the
     - ICMP
     
 2. Application layer protocols
+    - Http
+    - DNS
+    - FTP
+    - RDP
+    - SSH
+  
+the src_ip field determines what source IP address suricata looks for, This field can be a single address or a range of addresses or we can specify traffic from our internal network{$HOME_NET} or external network{$EXTERNAL_NET}
+
 
 
 ## Writing SPL queries
