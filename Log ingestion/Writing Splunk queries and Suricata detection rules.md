@@ -49,7 +49,9 @@ Some of the key pairs suricata uses are:
 - nocase	[Makes content match case-insensitive]
 - offset	[Sets where in the payload to begin searching]
 - depth	    [Limits how far into the payload to search]
-
+- ttl	    [Match a specific Time To Live value (IPv4)]
+- tos	    [Match a specific Type of Service (IPv4)]
+- fragbits	[Match fragmentation flags in IP header]
 
 
 
