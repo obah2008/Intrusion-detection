@@ -53,7 +53,7 @@ Some of the key pairs suricata uses are:
 - tos	    [Match a specific Type of Service (IPv4)]
 - fragbits	[Match fragmentation flags in IP header]
 
-
+#### Practical Rule Writing
 
 
 ## Writing SPL queries
