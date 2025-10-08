@@ -54,7 +54,10 @@ Some of the key pairs suricata uses are:
 - fragbits	[Match fragmentation flags in IP header]
 
 #### Practical Rule Writing
-
+Let's take an example. Suppose we are to Write a rule that triggers an alert when an HTTP request URI contains the word "admin".
+```suricata
+alert http any any -> any any (msg: Access to admin page detected”; content: "admin"; http.uri nocase; sid: 100002; rev:1;)
+```
 
 ## Writing SPL queries
 Splunk query Language allows you to sift through logs that have been ingested to suricata, the first step to writing SPL queries is defining the index--think of it like a storage container where logs collected by splunk are stored
