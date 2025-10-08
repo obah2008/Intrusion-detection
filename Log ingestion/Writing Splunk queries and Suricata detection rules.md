@@ -56,7 +56,7 @@ Some of the key pairs suricata uses are:
 #### Practical Rule Writing
 Let's take an example. Suppose we are to Write a rule that triggers an alert when an HTTP request URI contains the word "admin".
 ```suricata
-alert http any any -> any any (msg: Access to admin page detected”; content: "admin"; http.uri nocase; sid: 100002; rev:1;)
+alert http any any -> any any (msg: "Access to admin page detected”; content: "admin"; http.uri; nocase; sid: 100002; rev:1;)
 ```
 
 ## Writing SPL queries
