@@ -58,7 +58,16 @@ Let's take an example. Suppose we are to Write a rule that triggers an alert whe
 ```suricata
 alert http any any -> any any (msg: "Access to admin page detected”; content: "admin"; http.uri; nocase; sid: 100002; rev:1;)
 ```
+What this rule does:
+- alert → tells Suricata to trigger an alert.
+- http → limits matching to HTTP traffic.
+- content:"password"; → searches for the string “password” in the payload.
+- nocase; → makes the search case-insensitive.
+- msg: → adds a descriptive message to the alert.
+- sid: → uniquely identifies the rule.
+- rev: → version of the rule (good habit for future updates).
 
+SID: 100002
 ## Writing SPL queries
 Splunk query Language allows you to sift through logs that have been ingested to suricata, the first step to writing SPL queries is defining the index--think of it like a storage container where logs collected by splunk are stored
 for example, in this lab, all of the logs that will be identified will be analyzed are stored in an index named suricata, we can specify the index using ```index = "suricata"```
